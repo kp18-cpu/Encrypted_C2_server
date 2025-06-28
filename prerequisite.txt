@@ -1,0 +1,10 @@
+# Make sure to install Cryptography Library
+
+pip install cryptography
+
+# Generate Key
+
+from cryptography.fernet import Fernet
+
+key = Fernet.generate_key()
+print("Generated Key:", key.decode())
